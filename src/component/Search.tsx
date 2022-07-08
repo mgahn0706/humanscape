@@ -1,10 +1,5 @@
 const Search = () => {
-
-
-    return (
-        <input/>
-    )
-
-}
+  return <input />;
+};
 
 export default Search;
