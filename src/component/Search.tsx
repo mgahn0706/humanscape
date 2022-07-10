@@ -1,12 +1,14 @@
 import { useState } from "react";
-import { getRecommendList } from "../API/SearchAPI";
+import { getRecommendList } from "../action/API/SearchAPI";
 
 const Search = () => {
   const [keyword, setKeyword] = useState<string>("");
 
   const handleSearch = (input: string) => {
     setKeyword(input);
-    getRecommendList(input).then((res) => {});
+    getRecommendList(input).then((res) => {
+      console.log(res);
+    });
   };
 
   return (

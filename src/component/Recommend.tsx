@@ -1,19 +1,20 @@
-import { useState } from "react";
+import { DiseaseType } from "../interface/Interface";
 
-interface DiseaseType {
-  name: string;
-  id: number;
+interface RecommendProps {
+  recommendData?: DiseaseType[];
 }
 
-const Recommend = () => {
-  const [recommendList, setRecommendList] = useState<DiseaseType[]>([]);
-
+const Recommend = ({ recommendData }: RecommendProps) => {
   return (
     <div>
       <ul>
-        {recommendList.map((item) => {
-          return <li>{item.name}</li>;
-        })}
+        {recommendData ? (
+          recommendData.map((item) => {
+            return <li key={item.id}>{item.name}</li>;
+          })
+        ) : (
+          <li>추천 검색어 없음</li>
+        )}
       </ul>
     </div>
   );
