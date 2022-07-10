@@ -2,7 +2,7 @@
 
 ## 실행방법
 
-[배포사이트](localhost:3000) 로 접속. 또는,
+[배포사이트](https://dx3zc4zso1rry.cloudfront.net/) 로 접속. 또는,
 
  - GitHub에서 Git이나 GitHub Desktop 등으로 Clone 후, Clone한 위치로 들어갑니다.
  - windows 기준 cmd 창에서 `npm install`로 npm을 설치합니다.
