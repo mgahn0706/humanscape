@@ -8,24 +8,22 @@ interface RecommendProps {
 
 const Recommend = ({ recommendData }: RecommendProps) => {
   useEffect(() => {}, [recommendData]);
-
-  return (
+  return recommendData?.length !== 0 ? (
     <div className="recommend__container">
+      <p className="recommend__title">추천 검색어</p>
       <ul className="recommend__list">
-        {recommendData ? (
-          recommendData.map((item) => {
-            return (
-              <li className="recommend__item" key={item.id}>
-                <AiOutlineSearch />
-                {item.name}
-              </li>
-            );
-          })
-        ) : (
-          <li>추천 검색어 없음</li>
-        )}
+        {recommendData?.map((item) => {
+          return (
+            <li className="recommend__item" key={item.id}>
+              <AiOutlineSearch />
+              {item.name}
+            </li>
+          );
+        })}
       </ul>
     </div>
+  ) : (
+    <div />
   );
 };
 

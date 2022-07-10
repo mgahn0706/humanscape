@@ -15,7 +15,7 @@ const Search = ({ setRecommend }: SearchProps) => {
   useDebounce(
     () => {
       getRecommendList(keyword).then((res) => {
-        setRecommend(res);
+        keyword ? setRecommend(res) : setRecommend([]);
       });
     },
     1000,

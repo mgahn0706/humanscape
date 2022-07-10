@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="523cc8af-9c28-46a5-acd1-41df347382ad" name="Changes" comment="style: style 적용">
-      <change afterPath="$PROJECT_DIR$/src/action/hooks/useDebounce.ts" afterDir="false" />
+    <list default="true" id="523cc8af-9c28-46a5-acd1-41df347382ad" name="Changes" comment="feature: 검색에 debounce 적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Recommend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Recommend.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/mainStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mainStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/searchStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/searchStyle.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
       <updated>1657306359249</updated>
       <workItem from="1657306363268" duration="1504000" />
       <workItem from="1657320868686" duration="498000" />
-      <workItem from="1657388435007" duration="15721000" />
+      <workItem from="1657388435007" duration="17202000" />
     </task>
     <task id="LOCAL-00001" summary="setting: Redux 설치">
       <created>1657396417742</created>
@@ -95,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657462476544</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feature: 검색에 debounce 적용">
+      <created>1657466559334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657466559334</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +126,8 @@
     <MESSAGE value="setting: Redux 설치" />
     <MESSAGE value="feature: Redux로 현재 추천검색어 상태 관리" />
     <MESSAGE value="style: style 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: style 적용" />
+    <MESSAGE value="feature: 검색에 debounce 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: 검색에 debounce 적용" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
