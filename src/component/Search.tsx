@@ -8,9 +8,15 @@ interface SearchProps {
   setRecommend: (input: DiseaseType[]) => void;
   keyword: string;
   setKeyword: (input: string) => void;
+  handleArrowKey: (e: React.KeyboardEvent) => void;
 }
 
-const Search = ({ setRecommend, keyword, setKeyword }: SearchProps) => {
+const Search = ({
+  setRecommend,
+  keyword,
+  setKeyword,
+  handleArrowKey,
+}: SearchProps) => {
   useDebounce(
     () => {
       getRecommendList(keyword).then((res) => {
@@ -30,6 +36,7 @@ const Search = ({ setRecommend, keyword, setKeyword }: SearchProps) => {
       <AiOutlineSearch />
       <input
         className="search__input"
+        onKeyDown={handleArrowKey}
         placeholder="질환명을 입력해 주세요."
         value={keyword}
         onChange={(e) => {

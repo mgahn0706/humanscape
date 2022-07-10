@@ -27,6 +27,20 @@
     text-align: left;
 }
 
+
+.recommend__item--selected{
+    width: 480px;
+    height: 40px;
+    padding: 10px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.5s;
+    text-align: left;
+    background: lightgrey;
+}
+
 .recommend__item:hover{
     background: lightgrey;
 }
