@@ -3,6 +3,7 @@ import { getRecommendList } from "../action/API/SearchAPI";
 import { DiseaseType } from "../interface/Interface";
 import "../style/searchStyle.scss";
 import { AiOutlineSearch } from "react-icons/ai";
+import useDebounce from "../action/hooks/useDebounce";
 
 interface SearchProps {
   setRecommend: (input: DiseaseType[]) => void;
@@ -11,12 +12,18 @@ interface SearchProps {
 const Search = ({ setRecommend }: SearchProps) => {
   const [keyword, setKeyword] = useState<string>("");
 
+  useDebounce(
+    () => {
+      getRecommendList(keyword).then((res) => {
+        setRecommend(res);
+      });
+    },
+    1000,
+    [keyword]
+  );
+
   const handleSearch = (input: string) => {
     setKeyword(input);
-
-    getRecommendList(input).then((res) => {
-      setRecommend(res);
-    });
   };
 
   return (
