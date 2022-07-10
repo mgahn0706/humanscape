@@ -4,9 +4,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 interface RecommendProps {
   recommendData?: DiseaseType[];
+  setKeyword: (input: string) => void;
 }
 
-const Recommend = ({ recommendData }: RecommendProps) => {
+const Recommend = ({ recommendData, setKeyword }: RecommendProps) => {
   useEffect(() => {}, [recommendData]);
   return recommendData?.length !== 0 ? (
     <div className="recommend__container">
@@ -14,7 +15,13 @@ const Recommend = ({ recommendData }: RecommendProps) => {
       <ul className="recommend__list">
         {recommendData?.map((item) => {
           return (
-            <li className="recommend__item" key={item.id}>
+            <li
+              className="recommend__item"
+              key={item.id}
+              onClick={() => {
+                setKeyword(item.name);
+              }}
+            >
               <AiOutlineSearch />
               {item.name}
             </li>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { getRecommendList } from "../action/API/SearchAPI";
 import { DiseaseType } from "../interface/Interface";
 import "../style/searchStyle.scss";
@@ -7,11 +6,11 @@ import useDebounce from "../action/hooks/useDebounce";
 
 interface SearchProps {
   setRecommend: (input: DiseaseType[]) => void;
+  keyword: string;
+  setKeyword: (input: string) => void;
 }
 
-const Search = ({ setRecommend }: SearchProps) => {
-  const [keyword, setKeyword] = useState<string>("");
-
+const Search = ({ setRecommend, keyword, setKeyword }: SearchProps) => {
   useDebounce(
     () => {
       getRecommendList(keyword).then((res) => {
@@ -37,7 +36,14 @@ const Search = ({ setRecommend }: SearchProps) => {
           handleSearch(e.target.value);
         }}
       />
-      <button className="search__button">검색</button>
+      <button
+        className="search__button"
+        onClick={() => {
+          window.alert(`${keyword}(이)가 검색됨`);
+        }}
+      >
+        검색
+      </button>
     </div>
   );
 };
