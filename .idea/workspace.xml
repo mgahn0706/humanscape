@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="523cc8af-9c28-46a5-acd1-41df347382ad" name="Changes" comment="feature: 키보드로 추천 검색어 이동">
+    <list default="true" id="523cc8af-9c28-46a5-acd1-41df347382ad" name="Changes" comment="update: README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Recommend.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Recommend.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/containers/SearchContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/containers/SearchContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/searchStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/searchStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2Bfo9KjGZjkdaaCH5ZqkGPz9JWK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -75,7 +75,7 @@
       <workItem from="1657306363268" duration="1504000" />
       <workItem from="1657320868686" duration="498000" />
       <workItem from="1657388435007" duration="17870000" />
-      <workItem from="1657469853137" duration="3321000" />
+      <workItem from="1657469853137" duration="7782000" />
     </task>
     <task id="LOCAL-00001" summary="setting: Redux 설치">
       <created>1657396417742</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657470127489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feature: 키보드로 추천 검색어 이동">
+      <created>1657475085712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657475085712</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,8 @@
     <MESSAGE value="fix: 검색어가 없는 경우 추천 창 표시 안함" />
     <MESSAGE value="feature: 추천 검색어 클릭으로 검색어 변경" />
     <MESSAGE value="feature: 키보드로 추천 검색어 이동" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: 키보드로 추천 검색어 이동" />
+    <MESSAGE value="update: README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: README.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
