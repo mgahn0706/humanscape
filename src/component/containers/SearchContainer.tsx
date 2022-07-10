@@ -16,8 +16,8 @@ const SearchContainer = () => {
   };
 
   return (
-    <div>
-      <Search />
+    <div className="search__container">
+      <Search setRecommend={dispatchRecommend} />
       <Recommend recommendData={recommendData} />
     </div>
   );

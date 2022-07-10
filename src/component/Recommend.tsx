@@ -1,16 +1,25 @@
 import { DiseaseType } from "../interface/Interface";
+import { useEffect } from "react";
+import { AiOutlineSearch } from "react-icons/ai";
 
 interface RecommendProps {
   recommendData?: DiseaseType[];
 }
 
 const Recommend = ({ recommendData }: RecommendProps) => {
+  useEffect(() => {}, [recommendData]);
+
   return (
-    <div>
-      <ul>
+    <div className="recommend__container">
+      <ul className="recommend__list">
         {recommendData ? (
           recommendData.map((item) => {
-            return <li key={item.id}>{item.name}</li>;
+            return (
+              <li className="recommend__item" key={item.id}>
+                <AiOutlineSearch />
+                {item.name}
+              </li>
+            );
           })
         ) : (
           <li>추천 검색어 없음</li>

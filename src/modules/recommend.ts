@@ -10,7 +10,7 @@ export const setRecommend = (input: DiseaseType[]) => ({
 type RecommendAction = ReturnType<typeof setRecommend>;
 
 const initialState = {
-  recommendData: [{ id: 1, name: "종후군" }],
+  recommendData: [],
 };
 
 interface recommendState {

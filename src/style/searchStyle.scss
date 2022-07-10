@@ -1,0 +1,55 @@
+.search{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    font-weight: 400;
+    border-radius: 20px;
+    background: white;
+}
+
+.recommend__container{
+    width: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: white;
+
+}
+
+.recommend__item{
+    width: 480px;
+    height: 40px;
+    padding: 10px;
+    line-height: 40px;
+    font-size: 15px;
+    cursor:pointer;
+    transition: 0.5s;
+    text-align: left;
+}
+
+.recommend__item:hover{
+    background: lightgrey;
+}
+
+.recommend__list{
+    list-style: none;
+    padding: 0;
+}
+
+.search__input{
+    width: 86.7%;
+    height: 90%;
+    border: none;
+    font-size: 15px;
+}
+
+.search__button{
+    border: none;
+    background: rgb(71, 120, 218);
+    color: white;
+    height: 100%;
+    width: 10%;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
